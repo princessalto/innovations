@@ -1,0 +1,83 @@
+.v-content__wrap .home-gradient {
+  width: 100wh;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #0e051e, #1b0556, #561770, #2a1096);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+}
+
+.error__page--gradient {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 12px;
+  // background-image: linear-gradient(to right bottom, #a9347e, #4b32a7); //orignal
+  background: linear-gradient(-45deg, #0e051e, #1b0556, #561770, #2a1096);
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.2px;
+  color: #fff;
+  overflow: hidden;
+  animation: Gradient 15s ease infinite; // remove, and go back to original bg
+  -webkit-animation: Gradient 15s ease infinite; // remove, and go back to original bg
+  -moz-animation: Gradient 15s ease infinite; // remove, and go back to original bg
+  background-size: 400% 400%; // remove, and go back to original bg
+}
+
+.gradient__withAnimation {
+  background: linear-gradient(-45deg, #0e051e, #1b0556, #561770, #2a1096);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+}
+
+#toolbarMenu,
+#footer {
+  width: 100%;
+  height: auto;
+  color: #fff;
+  background: linear-gradient(-45deg, #0e051e, #1b0556, #561770, #2a1096);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "quill",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^11.0.1",
+    "@ckeditor/ckeditor5-build-inline": "^11.0.1",
+    "@ckeditor/ckeditor5-markdown-gfm": "^10.0.2",
+    "@mdi/font": "^2.7.94",
+    "aos": "^3.0.0-beta.5",
+    "createjs": "^1.0.1",
+    "jquery": "^3.3.1",
+    "jquery.scrollto": "^2.1.2",
+    "node": "^10.10.0",
+    "particles.js": "^2.0.0",
+    "register-service-worker": "^1.5.2",
+    "sortablejs": "^1.7.0",
+    "trianglify": "^1.2.0",
+    "vee-validate": "^2.1.0-beta.8",
+    "vue": "^2.5.17",
+    "vue-carousel": "^0.10.0",
+    "vue-drag-drop": "^1.1.4",
+    "vue-router": "^3.0.1",
+    "vue-shortkey": "^3.1.6",
+    "vue-virtual-scroll-list": "^1.2.8",
+    "vuetify": "^1.2.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-plugin-pwa": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-standard": "^3.0.1",
+    "axios": "^0.18.0",
+    "latest-node": "0.0.3",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-cli-plugin-axios": "0.0.4",
+    "vue-cli-plugin-vuetify": "^0.1.6",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

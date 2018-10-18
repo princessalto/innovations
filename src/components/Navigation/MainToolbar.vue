@@ -1,0 +1,97 @@
+<template>
+  <div class="scrolldown__wrapper">
+    <v-toolbar
+      id="toolbarMenu"
+      class="pa-3 transparent"
+      dark
+      >
+      <a
+        href="/"
+        class="my-3 hidden-sm-and-down"
+        @mouseleave="animateLogo($event, false)"
+        @mouseover="animateLogo($event, true)">
+        <img
+          width="46"
+          id="brand"
+          style="margin-left:25px"
+          :src="require('@/assets/logo.png')"
+          lt=""
+          >
+        <img
+          id="animated-brand"
+          class="hidden"
+          width="100"
+          :src="require('@/assets/images/innov-logomotion.gif')"
+          >
+      </a>
+
+      <a href="/" class="hidden-md-and-up">
+        <img width="40" :src="require('@/assets/logo.png')" alt="">
+      </a>
+
+      <v-spacer></v-spacer>
+
+      <!-- web -->
+      <main-menu></main-menu>
+      <!-- mobile -->
+      <mobile-nav></mobile-nav>
+    </v-toolbar>
+  </div>
+</template>
+
+<script>
+import _public from '@/router/public'
+import { mapGetters } from 'vuex'
+
+export default {
+  name: 'MainToolbar',
+
+  computed: {
+    ...mapGetters({
+      mainmenu: 'mainmenu/mainmenu',
+    }),
+  },
+
+  data () {
+    return {
+      menus: _public.children
+    }
+  },
+
+  mounted () {
+    this.showToolbar()
+  },
+
+  methods: {
+    showToolbar () {
+      var prevScrollpos = window.pageYOffset
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById('toolbarMenu').style.top = '0'
+        } else {
+          document.getElementById('toolbarMenu').style.top = '-112px'
+        }
+        prevScrollpos = currentScrollPos
+      }
+    },
+
+    animateLogo (e, hide = true) {
+      if (hide) {
+        document.getElementById('brand').classList.add('hidden')
+        document.getElementById('animated-brand').classList.remove('hidden')
+      } else {
+        document.getElementById('brand').classList.remove('hidden')
+        document.getElementById('animated-brand').classList.add('hidden')
+      }
+    }
+  }
+}
+</script>
+
+<style lang="stylus" scoped>
+.hidden {
+  display: none;
+  transition: all 0.3s ease-in;
+}
+</style>
