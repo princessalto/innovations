@@ -3,15 +3,15 @@
     <v-layout justify-center align-center row wrap>
       <v-flex xl8 lg9 md10 xs12>
         <v-layout row wrap>
-          <v-flex md3 xs12>
+          <v-flex md4 xs12>
             <v-card-text class="mb-4">
-              <h1 class="primary--text mb-3">
+              <h1 style="font-size: 42px;" class="primary--text mb-3">
                 {{ trans('Our Core Values') }}
               </h1>
             </v-card-text>
           </v-flex>
 
-          <v-flex md9 xs12>
+          <v-flex md8 xs12>
             <v-layout row wrap>
               <v-flex sm4 xs6>
                 <v-card

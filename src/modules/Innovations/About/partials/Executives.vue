@@ -13,7 +13,7 @@
             <v-menu
               v-model="menuContent1"
               :close-on-content-click="false"
-              max-width="400"
+              max-width="600"
               offset-x
               right
               transition="slide-x-transition"
@@ -32,7 +32,13 @@
                   <p><strong>{{ __('President & Chief Executive Officer') }}</strong></p>
 
                   <br>
-                  <p>{{ __('As the founder and Chief Executive Officer of SSA Consulting Group, Suhaimi Salleh has more than 30 years of experience in management consultancy in human resource development, organisational development, productivity management, audit, finance, and strategic planning in a broad array of industries in Singapore, Malaysia, Indonesia, Brunei, and the Philippines. Suhaimi was awarded the SME Partner Award by the Singapore Productivity & Standards Board in March 2001 for his outstanding contributions in the development of small and medium enterprises in Singapore. He has served and continues to serve in many public and civic institutions in various senior advisory capacities. Over the years, Suhaimi has also been invited to give his expert opinion on business and socio-economic issues, appearing numerous times on live TV and radio. Suhaimi is a Fellow Certified Public Accountant (Practising), a Fellow Certified Management Consultant, a Practising Management Consultant, and an Associate Financial Planner.') }}</p>
+                  <p><strong>{{ __('Suhaimi Salleh') }}</strong> {{ __('is the Founder & CEO of SSA Group, a group of companies established in 1986, providing professional services in management consulting, training, audit, accounting and estate planning. Two of its member companies, SSA Academy and SSA Culinary Institute, are approved training providers for the SkillsFuture Singapore (SSG) Workforce Skills Qualifications (WSQ) programmes and has trained more than 200,000 workers.') }}</p>
+
+                  <p>{{ __('Suhaimi has more than 40 years of post-graduate experience in management, consulting and corporate training. His expertise includes audit, finance, productivity and human capital management in a broad range of industries in Singapore, Malaysia, Indonesia, Philippines and Brunei. He has also been invited to speak at major conferences in Singapore, Malaysia, Indonesia and Saudi Arabia.') }}</p>
+
+                  <p>{{ __('Suhaimi is also a registered Asian Productivity Organisation (APO) Technical Expert on Productivity Management and Human Resource Development. He has been instrumental in introducing total quality management (TQM) and productivity improvement initiatives to companies and non-profit organisations in Singapore, Malaysia and Brunei. He is also a trainer in productivity, quality, finance and accounting and an accredited consultant for Enterprise Singapore.') }}</p>
+
+                  <p>{{ __('Suhaimi has won multiple awards for serving as an active community leader throughout his career and is currently the President of PMBM Scholarship Fund Board (LBKM) and Audit Committee Chairman of SG Enable. He has also served, among others, as a member of the Board of Governors of Temasek Polytechnic, the Council of Ngee Ann Polytechnic, Public Transport Council and the Charity Council.') }}</p>
                 </v-card-text>
               </v-card>
             </v-menu>
@@ -41,7 +47,7 @@
             <v-menu
               v-model="menuContent2"
               :close-on-content-click="false"
-              max-width="400"
+              max-width="600"
               offset-x
               left
               transition="slide-x-transition"

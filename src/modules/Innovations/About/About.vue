@@ -15,6 +15,7 @@
     </v-container>
 
     <mission></mission>
+
     <v-container grid-list-lg>
       <v-layout row wrap>
         <v-flex xs12>
