@@ -261,13 +261,13 @@ export default {
       this.$validator.validateAll()
         .then(ok => {
           if (ok) {
-            this.formSubmit()
+            this.onSubmit()
           }
           // this.resource.form.loading = false
         })
     },
 
-    formSubmit () {
+    onSubmit () {
       /* eslint-disable */
       this.$axios({
         url: '/api/v1/messages/store',
