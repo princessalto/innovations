@@ -257,7 +257,7 @@ export default {
 
   methods: {
     beforeFormSubmit () {
-      // this.$validator.reset()
+      this.$validator.reset()
       this.$validator.validateAll()
         .then(ok => {
           if (ok) {
