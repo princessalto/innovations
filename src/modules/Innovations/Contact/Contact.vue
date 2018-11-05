@@ -29,7 +29,6 @@
                 <div class="upform-header--x"></div>
                 <div class="upform-main--x">
                   <v-form
-                    v-model="resource.form.model"
                     @keyup.enter="beforeFormSubmit"
                     @submit.prevent="beforeFormSubmit"
                     >
@@ -222,7 +221,7 @@
 import store from '@/store'
 import ScrollTo from 'jquery.scrollto'
 import $ from 'jquery'
-import axios from '@/plugins/axios.js'
+import axios from 'axios'
 
 export default {
   $_veeValidate: {
@@ -234,20 +233,11 @@ export default {
 
   components: {
     ScrollTo,
-    axios,
   },
 
   data () {
     return {
-      resource: {
-        form: {
-          model: false,
-        },
-        name: null,
-        email: null,
-        body: null,
-        metadata: null,
-      }
+      resource: {}
     }
   },
 
@@ -268,16 +258,10 @@ export default {
     },
 
     onSubmit () {
-      /* eslint-disable */
-      this.$axios({
-        url: '/api/v1/messages/store',
-        data: this.resource,
-        method: 'POST'
-      }).then(response => {
-        // console.log('success', response)
-      }).catch(response => {
-        // console.log('error', response)
-      });
+      let uri = '/api/v1/messages/store'
+      axios.post(uri, this.resource).then((response) => {
+        console.log(response)
+      })
     },
 
     tellForm () {
