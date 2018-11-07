@@ -92,13 +92,15 @@ export default {
           if (ok) {
             this.$store.dispatch('authentication/login', credentials)
               .then((response) => {
-                this.$router.push({name: 'admin'})
-                this.$store.dispatch('sidebar/toggle', {model: true})
-                this.$store.dispatch('utilitybar/toggle', {model: true})
-                this.$store.dispatch('breadcrumbs/toggle', {model: true})
+                console.log(this.$router)
+                this.$router.push({ name: 'admin' })
+                this.$store.dispatch('sidebar/toggle', { model: true })
+                this.$store.dispatch('utilitybar/toggle', { model: true })
+                this.$store.dispatch('breadcrumbs/toggle', { model: true })
               })
               .catch((err) => {
                 errorbag(err.response, this.errors)
+                console.log(this.errors)
               })
           }
 

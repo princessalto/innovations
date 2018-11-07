@@ -1,9 +1,10 @@
-import { storage } from './storage'
+import { session } from './session'
 
 export const user = function () {
-  return storage('user:user')
+  return session('user:user')
 }
 
 export const logout = function () {
-  storage(['user:user', 'user:token'])
+  window.sessionStorage.removeItem('user:user')
+  window.sessionStorage.removeItem('user:token')
 }
