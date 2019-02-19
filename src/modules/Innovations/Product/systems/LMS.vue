@@ -15,18 +15,18 @@
 
 <script>
 import store from '@/store'
-import ProductBanner from './template/Banner'
-import ProductContent from './template/Content'
-import Rippl3sBanner from '@/modules/Innovations/Product/assets/images/Rippl3sBanner.svg'
-import iconOne from './assets/icons/Rippl3s/1.svg'
-import iconTwo from './assets/icons/Rippl3s/2.svg'
-import iconThree from './assets/icons/Rippl3s/3.svg'
-import iconFour from './assets/icons/Rippl3s/4.svg'
-// import video from './assets/videos/Rippl3s.mp4'
+import ProductBanner from '../template/Banner'
+import ProductContent from '../template/Content'
+import lmsBanner from './assets/images/lmsBanner.svg'
+import iconOne from './assets/icons/lms/1.svg'
+import iconTwo from './assets/icons/lms/2.svg'
+import iconThree from './assets/icons/lms/3.svg'
+import iconFour from './assets/icons/lms/4.svg'
+import video from './assets/videos/lms.mp4'
 
 export default {
   store,
-  name: 'Ripples',
+  name: 'LMS',
 
   components: {
     ProductBanner,
@@ -36,7 +36,7 @@ export default {
   data () {
     return {
       banner: {
-        thumbnail: Rippl3sBanner,
+        thumbnail: lmsBanner,
         title: 'Why Rippl3s?',
         subtitle: 'It’s an engaging learning experience right at your fingertips',
         description: 'Through our focused responsive portal where technology and curriculum work seamlessly together, we deliver convenience on different devices, thus cutting down your learning time and keeping track of your milestones without having to leave the comforts of your home.',

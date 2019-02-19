@@ -69,20 +69,22 @@
             </div>
 
             <!-- video -->
-            <v-layout row wrap>
-              <v-flex xs12>
-                <v-card
-                  data-aos="fade-up"
-                  flat
-                  class="text-xs-center py-5 transparent"
-                  >
-                  <video loop width="100%" height="auto" controls>
-                    <source :src="(item.video)" type="video/mp4">
-                    {{ trans('Your browser does not support HTML5 video.') }}
-                  </video>
-                </v-card>
-              </v-flex>
-            </v-layout>
+            <template v-if="dataset.hasVideo">
+              <v-layout row wrap>
+                <v-flex xs12>
+                  <v-card
+                    data-aos="fade-up"
+                    flat
+                    class="text-xs-center py-5 transparent"
+                    >
+                    <video loop width="100%" height="auto" controls>
+                      <source :src="(item.video)" type="video/mp4">
+                      {{ trans('Your browser does not support HTML5 video.') }}
+                    </video>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </template>
             <!-- video -->
 
             <v-layout row wrap>
@@ -121,6 +123,14 @@ export default {
 
   components: {
     AOS,
+  },
+
+  data () {
+    return {
+      dataset: {
+        hasVideo: true,
+      }
+    }
   },
 
   mounted () {
