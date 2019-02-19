@@ -22,7 +22,7 @@ import iconOne from './assets/icons/MobileApp/1.svg'
 import iconTwo from './assets/icons/MobileApp/2.svg'
 import iconThree from './assets/icons/MobileApp/3.svg'
 import iconFour from './assets/icons/MobileApp/4.svg'
-import video from './assets/videos/MobileApp.mp4'
+// import video from './assets/videos/MobileApp.mp4'
 
 export default {
   store,

@@ -52,6 +52,19 @@ export default [
           icon: 'mdi-book-multiple-variant',
         },
       },
+      {
+        path: 'mobile-apps',
+        name: 'products.application',
+        component: () => import('../MobileApp.vue'),
+        meta: {
+          title: 'Mobile Apps',
+          sort: 5,
+          external: true,
+          excludeFromRoot: true,
+          authenticatable: false,
+          icon: 'mdi-book-multiple-variant',
+        },
+      },
     ]
   },
 ]

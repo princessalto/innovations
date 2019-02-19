@@ -22,7 +22,7 @@ import iconOne from './assets/icons/Rippl3s/1.svg'
 import iconTwo from './assets/icons/Rippl3s/2.svg'
 import iconThree from './assets/icons/Rippl3s/3.svg'
 import iconFour from './assets/icons/Rippl3s/4.svg'
-import video from './assets/videos/Rippl3s.mp4'
+// import video from './assets/videos/Rippl3s.mp4'
 
 export default {
   store,
