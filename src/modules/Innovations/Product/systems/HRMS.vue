@@ -18,11 +18,11 @@ import store from '@/store'
 import ProductBanner from '../template/Banner'
 import ProductContent from '../template/Content'
 import hrmsBanner from './assets/images/hrmsBanner.svg'
-import iconOne from './assets/icons/lms/1.svg'
-import iconTwo from './assets/icons/lms/2.svg'
-import iconThree from './assets/icons/lms/3.svg'
-import iconFour from './assets/icons/lms/4.svg'
-import video from './assets/videos/lms.mp4'
+import iconOne from './assets/icons/hrms/1.svg'
+import iconTwo from './assets/icons/hrms/2.svg'
+import iconThree from './assets/icons/hrms/3.svg'
+import iconFour from './assets/icons/hrms/4.svg'
+import video from './assets/videos/hrms.mp4'
 
 export default {
   store,

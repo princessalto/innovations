@@ -24,7 +24,7 @@
             :class="current === submenu.name ? 'primary--text font-weight-bold v-list__tile--active' : ''"
             v-for="(submenu, j) in menu.children"
             >
-            <v-list-tile-content :class="current === submenu.name ? 'font-weight-bold' : ''">
+            <v-list-tile-content class="testLang" :class="current === submenu.name ? 'font-weight-bold' : ''">
               {{ submenu.meta.title }}
             </v-list-tile-content>
           </v-list-tile>

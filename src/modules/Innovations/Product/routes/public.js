@@ -40,11 +40,11 @@ export default [
         },
       },
       {
-        path: 'management-system',
+        path: 'management-systems',
         name: 'products.systems',
         component: () => import('../systems/ManagementSystem.vue'),
         meta: {
-          title: 'Management System',
+          title: 'Management Systems',
           sort: 5,
           external: true,
           excludeFromRoot: true,
@@ -53,7 +53,7 @@ export default [
         },
       },
       {
-        path: 'management-system/lms',
+        path: 'management-systems/lms',
         name: 'systems.lms',
         component: () => import('../systems/LMS.vue'),
         meta: {
@@ -66,7 +66,7 @@ export default [
         },
       },
       {
-        path: 'management-system/cms',
+        path: 'management-systems/cms',
         name: 'systems.cms',
         component: () => import('../systems/CMS.vue'),
         meta: {
@@ -79,7 +79,7 @@ export default [
         },
       },
       {
-        path: 'management-system/hrms',
+        path: 'management-systems/hrms',
         name: 'systems.hrms',
         component: () => import('../systems/HRMS.vue'),
         meta: {

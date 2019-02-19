@@ -103,7 +103,7 @@ export default {
             category: 'Management Systems',
             thumbnail: ManagementSystem,
             classMedia: 'first-child',
-            link: '/products/management-system',
+            link: '/products/management-systems',
           },
           {
             title: 'Learning and training made engaging and fun',
