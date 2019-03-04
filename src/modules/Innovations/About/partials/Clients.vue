@@ -10,9 +10,9 @@
               </h1>
             </div>
             <v-layout row wrap align-center justify-center>
-              <template v-for="item in items">
+              <template v-for="(item, i) in items">
                 <v-flex
-                  :key="item"
+                  :key="i"
                   md4 xs12
                   >
                   <img :width="item.width" :src="item.thumbnail" alt="">
