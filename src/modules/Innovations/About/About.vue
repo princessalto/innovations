@@ -9,6 +9,7 @@
       <v-layout row wrap>
         <v-flex xs12>
           <executives></executives>
+          <clients></clients>
           <how-we-work></how-we-work>
         </v-flex>
       </v-layout>
@@ -33,6 +34,7 @@
 import store from '@/store'
 import Banner from './partials/Banner'
 import Executives from './partials/Executives'
+import Clients from './partials/Clients'
 import HowWeWork from './partials/HowWeWork'
 import Mission from './partials/Mission'
 import Approach from './partials/Approach'
@@ -46,6 +48,7 @@ export default {
   components: {
     Banner,
     Executives,
+    Clients,
     HowWeWork,
     Mission,
     Approach,

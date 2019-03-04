@@ -43,6 +43,7 @@ export default {
       },
 
       content: {
+        hasVideo: true,
         heading: 'We design educational courses as interactive experiences',
         iconOne: iconOne,
         titleOne: 'Captivating storylines',

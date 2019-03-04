@@ -43,14 +43,15 @@ export default {
       },
 
       content: {
+        hasVideo: true,
         heading: 'Function better in a technological-driven society',
         iconOne: iconOne,
         titleOne: 'Real-life simulations',
         descriptionOne: 'Familiarise with everyday hustles, without the worries of committing real errors',
 
         iconTwo: iconTwo,
-        titleTwo: 'Integrated gamification',
-        descriptionTwo: 'Acquiring knowledge can still be fun',
+        titleTwo: 'Integrated experiential gamification',
+        descriptionTwo: 'Acquiring knowledge can still be fun! Take it to the next level with AR/VR',
 
         iconThree: iconThree,
         titleThree: 'Life-centric applications',

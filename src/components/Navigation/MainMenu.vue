@@ -19,6 +19,7 @@
         </v-btn>
         <v-list light>
           <v-list-tile
+            class="main-menu__indent"
             :key="j"
             :href="`${menu.path}/${submenu.path}`"
             :class="current === submenu.name ? 'primary--text font-weight-bold v-list__tile--active' : ''"

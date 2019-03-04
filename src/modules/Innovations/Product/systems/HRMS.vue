@@ -44,9 +44,7 @@ export default {
       },
 
       content: {
-        dataset: {
-          hasVideo: false,
-        },
+        hasVideo: false,
         heading: 'Managing your employees just got easier',
         iconOne: iconOne,
         titleOne: 'Real-Time Monitoring',

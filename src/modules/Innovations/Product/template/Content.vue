@@ -69,7 +69,7 @@
             </div>
 
             <!-- video -->
-            <template v-if="dataset.hasVideo">
+            <template v-if="item.hasVideo">
               <v-layout row wrap>
                 <v-flex xs12>
                   <v-card
@@ -85,6 +85,7 @@
                 </v-flex>
               </v-layout>
             </template>
+            <template v-else>{{ __('') }}</template>
             <!-- video -->
 
             <v-layout row wrap>
@@ -125,13 +126,13 @@ export default {
     AOS,
   },
 
-  data () {
-    return {
-      dataset: {
-        hasVideo: true,
-      }
-    }
-  },
+  // data () {
+  //   return {
+  //     dataset: {
+  //       hasVideo: true,
+  //     }
+  //   }
+  // },
 
   mounted () {
     setTimeout(function () {

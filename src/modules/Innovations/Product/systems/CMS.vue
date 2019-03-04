@@ -22,7 +22,7 @@ import iconOne from './assets/icons/cms/1.svg'
 import iconTwo from './assets/icons/cms/2.svg'
 import iconThree from './assets/icons/cms/3.svg'
 import iconFour from './assets/icons/cms/4.svg'
-import video from './assets/videos/cms.mp4'
+// import video from './assets/videos/cms.mp4'
 
 export default {
   store,
@@ -44,9 +44,7 @@ export default {
       },
 
       content: {
-        dataset: {
-          hasVideo: false,
-        },
+        hasVideo: false,
         heading: 'Take control of your digital creations',
         iconOne: iconOne,
         titleOne: 'Dynamic Design Tool',
@@ -64,7 +62,7 @@ export default {
         titleFour: 'Choose Your Own Style',
         descriptionFour: 'Personalise the look of your applications through unique integrated themes',
 
-        video: video,
+        // video: video,
         endTitle: 'Ready to bring your brainchild into existence?',
         // endLink: 'https://www.rippl3s.com/',
         buttonTitle: 'Create Now',

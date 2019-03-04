@@ -45,6 +45,7 @@ export default {
       },
 
       content: {
+        hasVideo: true,
         heading: 'Interactive learning anytime, anywhere',
         iconOne: iconOne,
         titleOne: 'Organised course content and analytics tools',

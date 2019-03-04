@@ -51,7 +51,7 @@
     <!-- content -->
     <v-container grid-list-lg>
       <v-layout row wrap justify-center align-center>
-        <v-flex xl9 lg10 md12 xs12>
+        <v-flex lg11 md12 xs12>
           <v-layout row wrap>
             <v-flex xs12>
               <div class="py-5 text-xs-center">
@@ -60,7 +60,7 @@
               <div class="py-5">
                 <v-layout row wrap>
                   <template v-for="(item, i) in content.items">
-                    <v-flex md4 xs12 :key="i">
+                    <v-flex :offset-md1="true" md3 xs12 :key="i">
                       <v-card
                         hover
                         height="100%"
