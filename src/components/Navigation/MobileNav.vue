@@ -61,6 +61,7 @@
               </v-list-tile>
 
               <v-list-tile
+                class="mobile-menu__indent"
                 :key="j"
                 ripple
                 :href="`${menu.path}/${submenu.path}`"
