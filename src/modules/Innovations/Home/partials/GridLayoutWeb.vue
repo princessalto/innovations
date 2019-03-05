@@ -99,7 +99,7 @@ export default {
             link: '/products/e-learning',
           },
           {
-            title: 'Customisable platform for collaborative learning anytime, anywhere',
+            title: 'Customisable platforms for collaborative learning anytime, anywhere',
             category: 'Management Systems',
             thumbnail: ManagementSystem,
             classMedia: 'first-child',
