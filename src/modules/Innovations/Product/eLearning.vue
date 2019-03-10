@@ -22,7 +22,7 @@ import iconOne from './assets/icons/eLearning/1.svg'
 import iconTwo from './assets/icons/eLearning/2.svg'
 import iconThree from './assets/icons/eLearning/3.svg'
 import iconFour from './assets/icons/eLearning/4.svg'
-// import video from './assets/videos/eLearning.mp4'
+import video from './assets/videos/eLearning.mp4'
 
 export default {
   store,
@@ -43,6 +43,7 @@ export default {
       },
 
       content: {
+        hasVideo: true,
         heading: 'We design educational courses as interactive experiences',
         iconOne: iconOne,
         titleOne: 'Captivating storylines',

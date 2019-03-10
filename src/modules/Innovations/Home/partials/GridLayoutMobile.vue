@@ -50,7 +50,7 @@
 
 <script>
 import store from '@/store'
-import Rippl3s from '@/modules/Innovations/Home/assets/images/Rippl3sBannerWithBG.png'
+import ManagementSystem from '@/modules/Innovations/Home/assets/images/ManagementSystemBannerWithBG.png'
 import eLearning from '@/modules/Innovations/Home/assets/images/eLearningBannerWithBG.png'
 import MobileApp from '@/modules/Innovations/Home/assets/images/MobileAppBannerWithBG.png'
 export default {
@@ -73,9 +73,9 @@ export default {
           },
           {
             title: 'Customisable platform for collaborative learning anytime, anywhere',
-            thumbnail: Rippl3s,
+            thumbnail: ManagementSystem,
             classMedia: 'first-child',
-            link: '/products/rippl3s',
+            link: '/products/management-systems',
           },
           {
             title: 'Learning and training made engaging and fun',
