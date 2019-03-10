@@ -22,7 +22,6 @@ import iconOne from './assets/icons/hrms/1.svg'
 import iconTwo from './assets/icons/hrms/2.svg'
 import iconThree from './assets/icons/hrms/3.svg'
 import iconFour from './assets/icons/hrms/4.svg'
-import video from './assets/videos/hrms.mp4'
 
 export default {
   store,
@@ -62,7 +61,6 @@ export default {
         titleFour: 'Mobile Compatible',
         descriptionFour: 'Access online wherever you are',
 
-        video: video,
         endTitle: 'Your time is precious.',
         // endLink: 'https://www.rippl3s.com/',
         buttonTitle: 'Get Started',
