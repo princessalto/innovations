@@ -63,15 +63,15 @@ export const mutations = {
 }
 
 export const actions = {
-  create: ({commit}, payload) => {
+  create: ({ commit }, payload) => {
     commit('CREATE', payload)
   },
 
-  rename: ({commit}, payload) => {
+  rename: ({ commit }, payload) => {
     commit('RENAME', payload)
   },
 
-  select: ({commit}, payload) => {
+  select: ({ commit }, payload) => {
     if (payload.type === 'file') {
       commit('SELECT_FILE', payload)
     }

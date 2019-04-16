@@ -26,7 +26,7 @@ import video from './assets/videos/eLearning.mp4'
 
 export default {
   store,
-  name: 'Ripples',
+  name: 'eLearning',
 
   components: {
     ProductBanner,
@@ -45,7 +45,6 @@ export default {
       content: {
         hasVideo: true,
         heading: 'We design educational courses as interactive experiences',
-        iconOne: iconOne,
         titleOne: 'Captivating storylines',
         descriptionOne: 'Our coursewares are paired with intriguing scenarios relatable to a diverse audience.',
 

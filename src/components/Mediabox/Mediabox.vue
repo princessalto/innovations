@@ -90,7 +90,7 @@ export default {
         },
         url: this.url.all,
         pagination: {
-          rowsPerPageItems: [12, 24, 30, {'text': 'All', 'value': -1}],
+          rowsPerPageItems: [12, 24, 30, { 'text': 'All', 'value': -1 }],
           rowsPerPageText: 'Items per page:',
           totalItems: 0
         },
@@ -131,7 +131,7 @@ export default {
       }, this.params)
 
       this.media.loading = true
-      this.$http.get(this.media.url, {params: query})
+      this.$http.get(this.media.url, { params: query })
         .then(response => {
           this.media.items = this.merge((response.data.data ? response.data.data : response.data), this.media.selected, 'id')
           this.media.pagination.totalItems = response.data.total
@@ -149,7 +149,7 @@ export default {
       }
 
       this.media.loading = true
-      this.$http.get(this.url.search, {params: query})
+      this.$http.get(this.url.search, { params: query })
         .then(response => {
           this.media.items = this.merge(response.data, this.media.selected, 'id')
           this.media.pagination.totalItems = response.data.total

@@ -26,7 +26,7 @@ import video from './assets/videos/MobileApp.mp4'
 
 export default {
   store,
-  name: 'Ripples',
+  name: 'MobileApp',
 
   components: {
     ProductBanner,

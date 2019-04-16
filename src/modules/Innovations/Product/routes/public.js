@@ -40,6 +40,19 @@ export default [
         },
       },
       {
+        path: 'augmented-reality',
+        name: 'products.augmentedreality',
+        component: () => import('../AugmentedReality.vue'),
+        meta: {
+          title: 'Augmented Reality',
+          sort: 5,
+          external: true,
+          excludeFromRoot: true,
+          authenticatable: false,
+          icon: 'mdi-book-multiple-variant',
+        },
+      },
+      {
         path: 'management-systems',
         name: 'products.systems',
         component: () => import('../systems/ManagementSystem.vue'),

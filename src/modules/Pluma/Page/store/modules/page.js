@@ -37,7 +37,7 @@ export const mutations = {
 }
 
 export const actions = {
-  get: ({commit}, payload) => {
+  get: ({ commit }, payload) => {
     commit('CREATE', payload)
   },
 }

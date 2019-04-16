@@ -28,11 +28,11 @@ export const mutations = {
 }
 
 export const actions = {
-  open: ({commit}, payload) => {
+  open: ({ commit }, payload) => {
     commit('OPEN', payload)
   },
 
-  close: ({commit}) => {
+  close: ({ commit }) => {
     commit('CLOSE')
   }
 }

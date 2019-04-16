@@ -303,12 +303,12 @@ export default {
     // Drag and Drop
     dragging (data, transferData, nativeElement) {
       console.log('dragging', transferData, nativeElement)
-      this.$emit('dragging', {file: this.metadata, transferData, nativeElement})
+      this.$emit('dragging', { file: this.metadata, transferData, nativeElement })
     },
 
     dropped (transferData, nativeElement) {
       console.log('dropped', transferData, nativeElement)
-      this.$emit('dropped', {file: this.metadata, transferData, nativeElement})
+      this.$emit('dropped', { file: this.metadata, transferData, nativeElement })
     }
   },
 }

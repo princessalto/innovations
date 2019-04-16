@@ -20,11 +20,11 @@ export const mutations = {
 }
 
 export const actions = {
-  set: ({commit}, payload) => {
+  set: ({ commit }, payload) => {
     commit('SET', payload)
   },
 
-  toggle: ({commit}, payload) => {
+  toggle: ({ commit }, payload) => {
     commit('TOGGLE', payload)
   },
 }

@@ -24,7 +24,7 @@ export default [
         },
         beforeEnter: (to, from, next) => {
           if (user()) {
-            next({name: 'admin'})
+            next({ name: 'admin' })
           } else {
             next()
           }
@@ -39,7 +39,7 @@ export default [
         },
         beforeEnter: (to, from, next) => {
           logout()
-          next({name: 'login.show'})
+          next({ name: 'login.show' })
         },
       },
 
@@ -55,7 +55,7 @@ export default [
         },
         beforeEnter: (to, from, next) => {
           if (user()) {
-            next({name: 'admin'})
+            next({ name: 'admin' })
           } else {
             next()
           }
@@ -73,7 +73,7 @@ export default [
         },
         beforeEnter: (to, from, next) => {
           if (user()) {
-            next({name: 'admin'})
+            next({ name: 'admin' })
           } else {
             next()
           }

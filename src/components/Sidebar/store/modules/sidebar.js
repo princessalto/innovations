@@ -36,17 +36,17 @@ export const mutations = {
 }
 
 export const actions = {
-  toggle: ({commit}, payload) => {
-    VM.methods.localstorage({'sidebar.model': payload.model})
+  toggle: ({ commit }, payload) => {
+    VM.methods.localstorage({ 'sidebar.model': payload.model })
     commit('TOGGLE', payload)
   },
 
-  clip: ({commit}, payload) => {
-    VM.methods.localstorage({'sidebar.clipped': payload.clipped})
+  clip: ({ commit }, payload) => {
+    VM.methods.localstorage({ 'sidebar.clipped': payload.clipped })
     commit('CLIP', payload)
   },
 
-  update: ({commit}, payload) => {
+  update: ({ commit }, payload) => {
     commit('UPDATE', payload)
   },
 }

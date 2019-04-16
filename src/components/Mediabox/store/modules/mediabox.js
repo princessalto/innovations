@@ -32,7 +32,7 @@ export const actions = {
   hideWindow: (context, payload) => {
     context.commit('HIDE_WINDOW', payload)
   },
-  select: ({commit}, payload) => {
+  select: ({ commit }, payload) => {
     commit('SELECT', payload)
   }
 }

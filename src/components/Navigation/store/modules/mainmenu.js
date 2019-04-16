@@ -15,7 +15,7 @@ export const mutations = {
 }
 
 export const actions = {
-  toggle: ({commit}, payload) => {
+  toggle: ({ commit }, payload) => {
     commit('TOGGLE', payload)
   },
 }

@@ -106,7 +106,7 @@ export default {
         },
         url: this.url.all,
         pagination: {
-          rowsPerPageItems: [12, 24, 30, {'text': 'All', 'value': -1}],
+          rowsPerPageItems: [12, 24, 30, { 'text': 'All', 'value': -1 }],
           rowsPerPageText: 'Items per page:',
           totalItems: 0
         },

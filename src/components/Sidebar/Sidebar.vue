@@ -122,7 +122,7 @@ export default {
 
     sidebarmodel: {
       set (value) {
-        this.toggle({model: value})
+        this.toggle({ model: value })
       },
       get () {
         return this.sidebar.model
@@ -140,10 +140,10 @@ export default {
       switch (this.$root.$vuetify.breakpoint.name) {
         case 'xs':
         case 'sm':
-          return this.toggle({model: false})
+          return this.toggle({ model: false })
         case 'lg':
         default:
-          this.toggle({model: value})
+          this.toggle({ model: value })
           break
       }
     }

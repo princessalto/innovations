@@ -56,11 +56,11 @@ export const mutations = {
 }
 
 export const actions = {
-  prompt ({commit}, payload) {
+  prompt ({ commit }, payload) {
     commit('PROMPT', payload)
   },
 
-  toggle ({commit}, payload) {
+  toggle ({ commit }, payload) {
     commit('PROMPT', payload)
   },
 }
