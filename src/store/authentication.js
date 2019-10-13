@@ -3,7 +3,7 @@ import axios from 'axios'
 import { storage } from '@/utils/storage'
 
 axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
-axios.defaults.baseURL = (process.env.NODE_ENV === 'production') ? 'http://127.0.0.1' : 'http://127.0.0.1:8000'
+axios.defaults.baseURL = (process.env.NODE_ENV === 'production') ? 'https://paralikha.ssagroup.com' : 'https://paralikha.ssagroup.com'
 
 export const state = () => ({
   tokens: {
@@ -67,7 +67,7 @@ export const actions = {
   login: ({ commit, dispatch }, payload) => {
     return new Promise((resolve, reject) => {
       commit('ATTEMPT', payload)
-      axios({ url: 'http://localhost:8000/api/v1/login', data: payload, method: 'POST' })
+      axios({ url: 'https://localhost:8000/api/v1/login', data: payload, method: 'POST' })
         .then(response => {
           const apiToken = response.data.api_token
           const rememberToken = response.data.remember_token

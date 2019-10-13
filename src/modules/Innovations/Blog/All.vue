@@ -57,7 +57,7 @@
                     <v-tooltip bottom>
                       <v-img
                         height="160"
-                        :src="props.item.feature"
+                        :src="props.item.avatar"
                         slot="activator"
                         >
                       </v-img>
@@ -92,8 +92,8 @@
                       <p>
                         <span
                           class="text--ellipsis"
-                          v-html="trans(props.item.body)"
                           >
+                          {{ trans(props.item.excerpt) }}
                         </span>
                       </p>
                     </v-card-text>
@@ -101,7 +101,7 @@
                     <v-list two-line>
                       <v-list-tile>
                         <v-list-tile-avatar>
-                          <img :src="props.item.authoravatar">
+                          <img :src="props.item.staffavatar">
                         </v-list-tile-avatar>
 
                         <v-list-tile-content>
@@ -141,7 +141,7 @@ export default {
 
   mounted () {
     /*eslint-disable*/
-    axios.get('/api/v1/blogs/all').then(response => {
+    axios.get('/api/v1/blogs').then(response => {
       this.resource.items = response.data.data
     })
   },
@@ -165,13 +165,13 @@ export default {
         headerTitle: 'Archives',
         items: [
           {
-            title: 'November 2018'
+            title: 'November 2019'
           },
           {
-            title: 'October 2018'
+            title: 'October 2019'
           },
           {
-            title: 'September 2018'
+            title: 'September 2019'
           }
         ]
       },
