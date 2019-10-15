@@ -7,7 +7,7 @@ import { AUTH_TOKEN } from '@/utils/authenticated'
 // Full config:  https://github.com/axios/axios#request-config
 axios.defaults.headers.common['Authorization'] = AUTH_TOKEN
 // axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
-axios.defaults.baseURL = (process.env.NODE_ENV === 'production') ? 'https://paralikha.ssagroup.com' : 'https://paralikha.ssagroup.com'
+axios.defaults.baseURL = (process.env.NODE_ENV === 'production') ? 'https://oreo.rippl3s.com' : 'http://oreo.rippl3s.com'
 axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
 
 let config = {

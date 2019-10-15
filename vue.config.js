@@ -4,7 +4,7 @@ module.exports = {
     proxy: {
       // proxy all requests starting with /api to
       '/api/v1': {
-        target: 'https://paralikha.ssagroup.com/api/v1',
+        target: 'http://oreo.rippl3s.com/api/v1',
         changeOrigin: false,
       },
     },
