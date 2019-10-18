@@ -1,5 +1,5 @@
 <template>
-  <v-card flat class="my-5">
+  <v-card flat class="">
     <v-card-text class="py-5 text-xs-center">
       <div class="my-5 text-xs-center">
         <h1 class="primary--text mb-3">

@@ -1,8 +1,8 @@
 <template>
   <v-container grid-list-lg>
     <v-layout row wrap justify-center align-center>
-      <v-flex xl8 lg10 md12 xs12>
-        <v-card flat class="my-5">
+      <v-flex lg10 md12 xs12>
+        <v-card flat class="my-3">
           <v-card-text class="py-5 text-xs-center">
             <div class="my-5 text-xs-center">
               <h1 class="primary--text mb-3">
@@ -13,9 +13,13 @@
               <template v-for="(item, i) in items">
                 <v-flex
                   :key="i"
-                  md4 xs12
+                  md3 xs12
                   >
-                  <img :width="item.width" :src="item.thumbnail" alt="">
+                  <!-- <div class="mr-4"> -->
+                    <div class="ma-3">
+                      <img :width="item.width" :src="item.thumbnail" alt="">
+                    </div>
+                  <!-- </div> -->
                 </v-flex>
               </template>
             </v-layout>
@@ -31,8 +35,9 @@ import store from '@/store'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import dole from '@/modules/Innovations/About/assets/images/clients/dole.png'
-import ilo from '@/modules/Innovations/About/assets/images/clients/ilo.png'
 import pjs from '@/modules/Innovations/About/assets/images/clients/pjs.png'
+import iloflag from '@/modules/Innovations/About/assets/images/clients/flag_yellow_high.jpg'
+import ilo from '@/modules/Innovations/About/assets/images/clients/ilo.png'
 
 export default {
   store,
@@ -43,16 +48,20 @@ export default {
       items: [
         {
           thumbnail: dole,
-          width: '200',
-        },
-        {
-          thumbnail: ilo,
-          width: '200',
+          width: '50%',
         },
         {
           thumbnail: pjs,
-          width: '300',
-        }
+          width: '100%',
+        },
+        {
+          thumbnail: iloflag,
+          width: '60%',
+        },
+        {
+          thumbnail: ilo,
+          width: '100%',
+        },
       ]
     }
   },
