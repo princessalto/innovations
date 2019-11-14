@@ -57,7 +57,7 @@
                     <v-tooltip bottom>
                       <v-img
                         height="160"
-                        :src="props.item.avatar"
+                        :src="props.item.avatar ? props.item.avatar : 'https://i2.wp.com/www.solidcolore.com/thumb/e1e1e1_background.jpg?zoom=2.625&ssl=1'"
                         slot="activator"
                         >
                       </v-img>
@@ -125,7 +125,7 @@
       </v-layout>
     </v-container>
 
-    <v-card height="100"></v-card>
+    <v-card height="200" flat></v-card>
 
     <footer-component></footer-component>
   </section>

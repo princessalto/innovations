@@ -31,7 +31,7 @@
 
             <!-- featured image -->
             <v-responsive :aspect-ratio="16/9">
-              <v-img :src="item.avatar"></v-img>
+              <v-img :src="item.avatar ? item.avatar : ''"></v-img>
             </v-responsive>
             <!-- featured image -->
 

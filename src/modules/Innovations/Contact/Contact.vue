@@ -237,7 +237,7 @@ export default {
 
   data () {
     return {
-      resource: {}
+      resource: { _token: '' }
     }
   },
 
@@ -258,9 +258,10 @@ export default {
     },
 
     onSubmit () {
-      let uri = '/api/v1/messages/store'
+      let uri = '/api/v1/messages'
       axios.post(uri, this.resource).then((response) => {
-        console.log(response)
+        this.$router.go({name: 'messages.index'})
+        // alert("Message submitted")
       })
     },
 

@@ -6,6 +6,9 @@
           <v-flex xs12>
             <template>
               <div class="py-5">
+                <!-- <div>
+                  <iframe src="https://rippl3s.com/business-card" height="500" width="600"></iframe>
+                </div> -->
                 <div
                   v-for="(poster, i) in item.items"
                   :key="i"

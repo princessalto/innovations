@@ -32,7 +32,7 @@
                         </v-card-text>
                       </v-card>
                     </v-menu>
-                    {{ __('below and unlock hidden content, virtually learning more about our organisation <br> - the interactive way.') }}
+                    below and unlock hidden content, virtually learning more about our organisation <br> - the interactive way
                   </p>
                   <v-btn
                     large
