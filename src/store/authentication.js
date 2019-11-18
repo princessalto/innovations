@@ -3,7 +3,7 @@ import axios from 'axios'
 import { storage } from '@/utils/storage'
 
 axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
-axios.defaults.baseURL = (process.env.NODE_ENV === 'production') ? 'https://localhost:3000' : 'http://localhost:3000'
+axios.defaults.baseURL = (process.env.NODE_ENV === 'production') ? 'https://oreo.rippl3s.com' : 'http://oreo.rippl3s.com'
 
 export const state = () => ({
   tokens: {
