@@ -12,14 +12,6 @@ export const state = () => ({
     timeout: 3000,
     mode: null, // e.g. multi-line, vertical
 
-    // Position
-    x: 'center',
-    y: 'bottom',
-
-    // Button
-    button: true,
-    buttonIcon: false,
-    buttonText: 'Okay',
     buttonCallback: () => {}
   }
 })

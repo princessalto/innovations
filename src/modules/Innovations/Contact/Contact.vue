@@ -6,12 +6,12 @@
 
         <v-container grid-list-lg>
           <v-layout row wrap justify-center align-center>
-            <v-flex xs12>
+            <v-flex xl8 lg9 md12 xs12>
               <v-card flat class="transparent py-5">
                 <h1 class="mb-3">
                   {{ trans('Let\'s grab some imaginary coffee and talk!') }}
                 </h1>
-                <div><span>{{ __('innovations@ssagroup.com') }}</span></div>
+                <div><strong>Email Address:</strong><span class="ml-2">{{ __('innovations@ssagroup.com') }}</span></div>
                 <div><strong>Headquarters:</strong> <span class="ml-2">{{ __('11 Eunos Road 8 #06-01 (Lobby A), Lifelong Learning Institute, Singapore') }}</span></div>
                 <div><strong>Philippines Branch:</strong><span class="ml-2">{{ __('Pearl Drive, Ortigas, Philippines') }}</span></div>
               </v-card>
@@ -36,74 +36,75 @@
 
                     <div class="input-block">
                       <div class="label">
-                        <div class="mb-5">
-                          <h1 class="primary--text">
+                        <div class="mb-4">
+                          <h1 class="primary--text mb-4">
                             {{ trans('What\'s your name?') }}
                           </h1>
-                        </div>
-                        <div class="input-control">
-                          <v-text-field
-                            :data-vv-as="trans('Name')"
-                            :error-messages="errors.collect('name')"
-                            v-validate="'required'"
-                            box
-                            autofocus
-                            label="Name"
-                            name="name"
-                            v-model="resource.name"
-                          ></v-text-field>
+                          <div class="input-control">
+                            <v-text-field
+                              :data-vv-as="trans('Name')"
+                              :error-messages="errors.collect('name')"
+                              v-validate="'required'"
+                              box
+                              autofocus
+                              label="Name"
+                              name="name"
+                              v-model="resource.name"
+                            ></v-text-field>
+                          </div>
                         </div>
                       </div>
                     </div>
 
                     <div class="input-block">
                       <div class="label">
-                        <div class="mb-5">
-                          <h1 class="primary--text">
+                        <div class="mb-4">
+                          <h1 class="primary--text mb-4">
                             {{ trans('How can we reach you?') }}
                           </h1>
-                        </div>
-                        <div class="input-control">
-                          <v-text-field
-                            :data-vv-as="trans('Email')"
-                            :error-messages="errors.collect('email')"
-                            box
-                            name="email"
-                            label="Email"
-                            v-model="resource.email"
-                            required
-                            v-validate="'required|email'"
-                            >
-                          </v-text-field>
+                          <div class="input-control">
+                            <v-text-field
+                              :data-vv-as="trans('Email')"
+                              :error-messages="errors.collect('email')"
+                              box
+                              name="email"
+                              label="Email"
+                              v-model="resource.email"
+                              required
+                              v-validate="'required|email'"
+                              >
+                            </v-text-field>
+                          </div>
                         </div>
                       </div>
                     </div>
 
                     <div class="input-block">
                       <div class="label">
-                        <div class="mb-5">
-                          <h1 class="primary--text">
+                        <div class="mb-4">
+                          <h1 class="primary--text mb-4">
                             {{ trans('What do you have in mind?') }}
                           </h1>
-                        </div>
-                        <div>
-                          <v-text-field
-                            :error-messages="errors.collect('body')"
-                            box
-                            :data-vv-as="trans('Message')"
-                            label="Message"
-                            name="body"
-                            required
-                            single-line
-                            v-model="resource.body"
-                            v-validate="'required'"
-                          ></v-text-field>
+                          <div>
+                            <v-text-field
+                              :error-messages="errors.collect('body')"
+                              box
+                              :data-vv-as="trans('Message')"
+                              label="Message"
+                              name="body"
+                              required
+                              single-line
+                              v-model="resource.body"
+                              v-validate="'required'"
+                            ></v-text-field>
+                          </div>
                         </div>
                       </div>
                       <div class="input-control">
                         <v-btn
                           color="secondary"
                           large
+                          class="ml-0"
                           dark
                           type="submit">
                           {{ trans('Submit') }}
@@ -267,24 +268,23 @@ export default {
         })
     },
 
-    onSubmit () {
+    onSubmit(e) {
       let uri = '/api/v1/messages'
       axios.post(uri, this.resource).then((response) => {
-        this.$router.go({name: 'contact-us'})
+        this.$router.push({name: 'contact-us'})
         this.$store.dispatch(
           'snackbar/TOGGLE_TOAST',
           Object.assign(
             this.snackbar,
             {
               model: true,
-              // icon: 'add',
-              // iconColor: 'success--text',
-              text: 'Your message is successfully submitted',
+              text: 'Your message is successfully submitted.',
             }
           )
         )
-        // alert("Message submitted")
       })
+      this.resource = '';
+      e.preventDefault();
     },
 
     tellForm () {

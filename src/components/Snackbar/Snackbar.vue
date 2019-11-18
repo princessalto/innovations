@@ -1,11 +1,9 @@
 <template>
   <v-snackbar
-    :bottom="snackbar.y === 'bottom'"
-    :left="snackbar.x === 'left'"
-    :multi-line="snackbar.mode === 'multi-line'"
-    :right="snackbar.x === 'right'"
+    class="pa-4"
+    right
+    bottom
     :timeout="snackbar.timeout"
-    :top="snackbar.y === 'top'"
     :vertical="snackbar.mode === 'vertical'"
     v-model="snackbar.model"
     >
