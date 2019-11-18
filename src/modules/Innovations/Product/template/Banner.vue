@@ -18,6 +18,7 @@
               <v-btn
                 large
                 color="secondary"
+                v-show="item.bannerBtn"
                 :href="item.link"
                 target="__blank"
                 v-html="item.button">

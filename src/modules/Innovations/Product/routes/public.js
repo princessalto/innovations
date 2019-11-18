@@ -53,19 +53,6 @@ export default [
         },
       },
       {
-        path: 'augmented-reality/AR',
-        name: 'augmentedreality.webar',
-        component: () => import('../augmentedreality/WebAR.vue'),
-        meta: {
-          title: 'Web AR',
-          sort: 5,
-          external: true,
-          excludeFromRoot: true,
-          authenticatable: false,
-          icon: 'mdi-book-multiple-variant',
-        },
-      },
-      {
         path: 'management-systems',
         name: 'products.systems',
         component: () => import('../systems/ManagementSystem.vue'),

@@ -88,7 +88,7 @@
             <template v-else>{{ __('') }}</template>
             <!-- video -->
 
-            <v-layout row wrap>
+            <v-layout row wrap v-show="item.cta">
               <v-flex xs12>
                 <v-card
                   flat

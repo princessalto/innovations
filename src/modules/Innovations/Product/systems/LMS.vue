@@ -42,6 +42,7 @@ export default {
         description: 'Through our focused responsive portal where technology and curriculum work seamlessly together, we deliver convenience on different devices, thus cutting down your learning time and keeping track of your milestones without having to leave the comforts of your home.',
         button: 'Try Now',
         link: 'https://www.rippl3s.com/',
+        bannerBtn: true,
       },
 
       content: {
@@ -67,6 +68,8 @@ export default {
         endTitle: 'Make every Ripple count today',
         endLink: 'https://www.rippl3s.com/',
         buttonTitle: 'Let\'s Start',
+
+        cta: true,
       }
     }
   },

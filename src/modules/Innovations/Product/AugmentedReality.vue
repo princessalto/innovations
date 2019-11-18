@@ -52,6 +52,26 @@
 
     <poster :item="poster"></poster>
 
+    <template>
+      <v-container grid-list-lg>
+        <div class="py-5">
+          <div class="text-xs-center">
+            <h1 class="secondary--text">{{ __('For an AR experience, scan this code.') }}</h1>
+          </div>
+
+          <v-layout row wrap justify-center align-center>
+              <v-flex lg4 md8 xs12>
+                <v-layout row wrap>
+                  <v-flex xs12>
+                    <div><v-img width="100%" :src="qrcode.src"></v-img></div>
+                  </v-flex>
+                </v-layout>
+              </v-flex>
+          </v-layout>
+        </div>
+      </v-container>
+    </template>
+
     <footer-component></footer-component>
   </section>
 </template>
@@ -66,6 +86,7 @@ import posterThree from './assets/posters/poster-3-culinary.png'
 import posterFour from './assets/posters/poster-4-academy.png'
 import cardImg from './assets/posters/bcard.png'
 import handwash from './assets/posters/handwash.png'
+import qrcode from './assets/images/bcard-qrcode.svg'
 
 export default {
   store,
@@ -78,36 +99,48 @@ export default {
 
   data () {
     return {
+      qrcode: {
+        src: qrcode
+      },
       banner: {
         title: 'Take a glimpse of SSA Group through <br> Augmented Reality',
         button: 'Download SSARAPP',
         link: 'http://l.ead.me/bb6DSk',
       },
-      poster: {
-        heading: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat atque eveniet aspernatur odit, accusamus cum vel, numquam magnam, fuga cupiditate officiis. Sit molestiae deserunt quo accusantium explicabo facilis officia sapiente.',
-        handwashTitle: 'Be informed!',
-        handwashImg: handwash,
-        cardTitle: 'Here\'s our card!',
-        cardImg: cardImg,
-        items: [
-          {
-            thumbnail: posterOne,
-            title: 'Recognition-based AR Technology',
-          },
-          {
-            thumbnail: posterTwo,
-            title: 'Building capabilities',
-          },
-          {
-            thumbnail: posterThree,
-            title: 'Let\'s get baking!',
-          },
-          {
-            thumbnail: posterFour,
-            title: 'Nurturing talents for the future economy',
-          },
-        ]
-      },
+      poster: [
+        { src: posterOne, title: "Recognition-based AR Technology" },
+        { src: posterTwo, title: "Building capabilities" },
+        { src: posterThree, title: "Let's get baking!" },
+        { src: posterFour, title: "Nurturing talents for the future economy" },
+        { src: handwash, title: "Be informed" },
+        { src: cardImg, title: "Here's our card!" },
+      ],
+
+      // poster: {
+      //   heading: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat atque eveniet aspernatur odit, accusamus cum vel, numquam magnam, fuga cupiditate officiis. Sit molestiae deserunt quo accusantium explicabo facilis officia sapiente.',
+      //   handwashTitle: 'Be informed!',
+      //   handwashImg: handwash,
+      //   cardTitle: 'Here\'s our card!',
+      //   cardImg: cardImg,
+      //   items: [
+      //     {
+      //       thumbnail: posterOne,
+      //       title: 'Recognition-based AR Technology',
+      //     },
+      //     {
+      //       thumbnail: posterTwo,
+      //       title: 'Building capabilities',
+      //     },
+      //     {
+      //       thumbnail: posterThree,
+      //       title: 'Let\'s get baking!',
+      //     },
+      //     {
+      //       thumbnail: posterFour,
+      //       title: 'Nurturing talents for the future economy',
+      //     },
+      //   ]
+      // },
     }
   },
 }

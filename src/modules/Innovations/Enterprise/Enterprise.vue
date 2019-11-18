@@ -95,9 +95,10 @@
                     <v-btn
                       large
                       color="secondary"
-                      href="mailto:abigail.ssagroup.com"
+                      target="_blank"
+                      href="https://innovations.ssagroup.com/contact-us"
                       >
-                      {{ trans('Email Us') }}
+                      {{ trans('Contact Us') }}
                     </v-btn>
                   </v-card>
                 </v-flex>

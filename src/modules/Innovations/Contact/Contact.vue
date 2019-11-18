@@ -12,7 +12,8 @@
                   {{ trans('Let\'s grab some imaginary coffee and talk!') }}
                 </h1>
                 <div><span>{{ __('innovations@ssagroup.com') }}</span></div>
-                <div><span>{{ __('Pearl Drive, Ortigas, Philippines') }}</span></div>
+                <div><strong>Headquarters:</strong> <span class="ml-2">{{ __('11 Eunos Road 8 #06-01 (Lobby A), Lifelong Learning Institute, Singapore') }}</span></div>
+                <div><strong>Philippines Branch:</strong><span class="ml-2">{{ __('Pearl Drive, Ortigas, Philippines') }}</span></div>
               </v-card>
             </v-flex>
           </v-layout>
@@ -119,6 +120,7 @@
     </v-container>
 
     <footer-component></footer-component>
+    <snackbar></snackbar>
   </section>
 </template>
 
@@ -222,8 +224,10 @@ import store from '@/store'
 import ScrollTo from 'jquery.scrollto'
 import $ from 'jquery'
 import axios from 'axios'
+import { mapGetters } from 'vuex'
 
 export default {
+  store,
   $_veeValidate: {
     validator: 'new'
   },
@@ -245,6 +249,12 @@ export default {
     this.tellForm()
   },
 
+  computed: {
+    ...mapGetters({
+      snackbar: 'snackbar/snackbar',
+    })
+  },
+
   methods: {
     beforeFormSubmit () {
       this.$validator.reset()
@@ -260,7 +270,19 @@ export default {
     onSubmit () {
       let uri = '/api/v1/messages'
       axios.post(uri, this.resource).then((response) => {
-        this.$router.go({name: 'messages.index'})
+        this.$router.go({name: 'contact-us'})
+        this.$store.dispatch(
+          'snackbar/TOGGLE_TOAST',
+          Object.assign(
+            this.snackbar,
+            {
+              model: true,
+              // icon: 'add',
+              // iconColor: 'success--text',
+              text: 'Your message is successfully submitted',
+            }
+          )
+        )
         // alert("Message submitted")
       })
     },

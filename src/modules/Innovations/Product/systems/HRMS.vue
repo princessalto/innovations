@@ -40,6 +40,7 @@ export default {
         subtitle: 'It\'s a tailored-fit digital solution for a more efficient HR management',
         description: 'Ponos is designed to make relevant information accessible for both the employees and the management, from timely processing to proper monitoring of HR processes. Yes, in other words, Ponos will do all the hard labor and toil while you sit back, relax, and enjoy your coffee.',
         button: 'Learn More',
+        bannerBtn: false,
       },
 
       content: {
@@ -64,6 +65,8 @@ export default {
         endTitle: 'Your time is precious.',
         // endLink: 'https://www.rippl3s.com/',
         buttonTitle: 'Get Started',
+
+        cta: false,
       }
     }
   },

@@ -41,6 +41,7 @@ export default {
         subtitle: 'It\'s the mother of all management systems',
         description: 'Pluma acts as a framework to create various digital ideas. And we all know that every awesome idea starts with a blank canvas and a flexible tool that follows your lead.  Say you have A LOT of ideas, how can you successfully manage them all? Well, Pluma is one extensible platform! We designed it to give you that creative freedom we all honestly need because we only want what best represents us, right?',
         button: 'Learn More',
+        bannerBtn: false,
       },
 
       content: {
@@ -66,6 +67,8 @@ export default {
         endTitle: 'Ready to bring your brainchild into existence?',
         // endLink: 'https://www.rippl3s.com/',
         buttonTitle: 'Create Now',
+
+        cta: false,
       }
     }
   },

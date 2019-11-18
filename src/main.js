@@ -15,6 +15,8 @@ import '@mdi/font/css/materialdesignicons.css'
 import App from './App.vue'
 import router from './router/index'
 import store from './store/index'
+
+import '@/components';
 import Vue from 'vue'
 
 Vue.config.productionTip = false

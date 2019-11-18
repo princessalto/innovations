@@ -39,10 +39,12 @@ export default {
         thumbnail: eLearningBanner,
         title: 'Let\'s Be Learning Partners',
         description: 'As advocates of lifelong career progressions, our aim is to help anyone with the same purpose. For you who constantly seek to enhance efficiency and value, we will help fix performance gaps through relevant e-Learning programmes suited to meet the demands of today\'s economy.',
-        button: 'Learn More'
+        button: 'Learn More',
+        bannerBtn: false,
       },
 
       content: {
+        iconOne: iconOne,
         hasVideo: true,
         heading: 'We design educational courses as interactive experiences',
         titleOne: 'Captivating storylines',
@@ -63,6 +65,8 @@ export default {
         video: video,
         endTitle: 'What would you like to learn today?',
         buttonTitle: 'View Courses',
+
+        cta: false
       }
     }
   },

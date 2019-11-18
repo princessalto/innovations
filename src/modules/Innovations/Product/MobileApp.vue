@@ -40,6 +40,7 @@ export default {
         title: 'Gamified Learning in the Palm of Your Hand',
         description: 'Forged from the depths of our innovative minds, we offer cutting edge apps for the modern learner.',
         button: 'Discover',
+        bannerBtn: false,
       },
 
       content: {
@@ -64,6 +65,8 @@ export default {
         video: video,
         endTitle: 'Try the future now!',
         buttonTitle: 'Play Me',
+
+        cta: false,
       }
     }
   },
