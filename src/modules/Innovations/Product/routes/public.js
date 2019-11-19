@@ -78,19 +78,19 @@ export default [
           icon: 'mdi-book-multiple-variant',
         },
       },
-      {
-        path: 'management-systems/cms',
-        name: 'systems.cms',
-        component: () => import('../systems/CMS.vue'),
-        meta: {
-          title: 'CMS',
-          sort: 5,
-          external: true,
-          excludeFromRoot: true,
-          authenticatable: false,
-          icon: 'mdi-book-multiple-variant',
-        },
-      },
+      // {
+      //   path: 'management-systems/cms',
+      //   name: 'systems.cms',
+      //   component: () => import('../systems/CMS.vue'),
+      //   meta: {
+      //     title: 'CMS',
+      //     sort: 5,
+      //     external: true,
+      //     excludeFromRoot: true,
+      //     authenticatable: false,
+      //     icon: 'mdi-book-multiple-variant',
+      //   },
+      // },
       {
         path: 'management-systems/hrms',
         name: 'systems.hrms',
