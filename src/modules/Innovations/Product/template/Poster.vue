@@ -1,44 +1,47 @@
 <template>
   <v-container grid-list-lg>
-    <div class="py-5">
-      <carousel
-        paginationColor="grey"
-        :perPage="1"
-        paginationEnabled
-        navigationPrevLabel
-        navigationNextLabel
-        easing
-        >
-        <template
-          v-for="(ar,i) in item"
-          >
-          <slide :key="i">
-            <v-card flat>
-              <v-card-text class="text-xs-center">
-                <h2
-                  class=" secondary--text font-weight-bold"
-                  v-text="ar.title"
-                  >
-                </h2>
-              </v-card-text>
-              <v-layout row wrap justify-center align-center>
-                <v-flex  lg4 md8 xs12>
-                  <v-layout row wrap>
-                    <v-flex xs12>
-                      <v-img
-                        height="100%"
-                        width="100%"
-                        :src="ar.src"
-                        >
-                      </v-img>
-                    </v-flex>
-                  </v-layout>
-                </v-flex>
-              </v-layout>
-            </v-card>
-          </slide>
-        </template>
-      </carousel>
+    <div class="py-5 px-3">
+      <v-layout row wrap justify-center align-center>
+        <v-flex  lg4 md8 xs12>
+          <carousel
+            :navigationNextLabel='`<i aria-hidden="true" class="material-icons primary--text">arrow_forward</i>`'
+            :navigationPrevLabel='`<i aria-hidden="true" class="material-icons primary--text">arrow_back</i>`'
+            :perPage="1"
+            easing
+            navigationEnabled
+            paginationActiveColor="#b80080"
+            paginationColor="#2e0069"
+            paginationEnabled
+            autoplay
+            autoplayTimeout="6000"
+            >
+            <template
+              v-for="(ar,i) in item"
+              >
+              <slide :key="i">
+                <v-card-text class="pa-0 text-xs-center">
+                  <h2
+                    class=" secondary--text font-weight-bold"
+                    v-text="ar.title"
+                    >
+                  </h2>
+                </v-card-text>
+                <v-card flat>
+                  <v-card-text>
+                    <v-img
+                      height="100%"
+                      width="100%"
+                      class="poster-shadow"
+                      :src="ar.src"
+                      >
+                    </v-img>
+                  </v-card-text>
+                </v-card>
+              </slide>
+            </template>
+          </carousel>
+        </v-flex>
+      </v-layout>
     </div>
 
     <template>

@@ -1,4 +1,7 @@
 module.exports = {
+  pwa: {
+    themeColor: '#2E0069'
+  },
   devServer: {
     disableHostCheck: true,
     proxy: {

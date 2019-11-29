@@ -21,7 +21,7 @@
                   <p class="font__weight--bold mb-3">
                     {{ __('SSARapp lets you create an engaging AR experience with us by bringing our print materials to life. Use this app to scan our') }}
                     <v-menu open-on-hover offset-y bottom max-width="500px">
-                      <span class="tooltip-text" slot="activator">
+                      <span class="tooltip-text mb-1 px-1" slot="activator">
                         {{ __('marker images') }}
                       </span>
                       <v-card>
@@ -108,12 +108,12 @@ export default {
         link: 'http://l.ead.me/bb6DSk',
       },
       poster: [
-        { src: posterOne, title: "Recognition-based AR Technology" },
-        { src: posterTwo, title: "Building capabilities" },
-        { src: posterThree, title: "Let's get baking!" },
-        { src: posterFour, title: "Nurturing talents for the future economy" },
-        { src: handwash, title: "Be informed" },
-        { src: cardImg, title: "Here's our card!" },
+        { src: posterOne, title: 'Recognition-based AR Technology' },
+        { src: posterTwo, title: 'Building capabilities' },
+        { src: posterThree, title: 'Let\'s get baking!' },
+        { src: posterFour, title: 'Nurturing talents for the future economy' },
+        { src: handwash, title: 'Be informed' },
+        { src: cardImg, title: 'Here\'s our card!' },
       ],
 
       // poster: {

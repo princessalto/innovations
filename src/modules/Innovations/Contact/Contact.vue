@@ -12,8 +12,8 @@
                   {{ trans('Let\'s grab some imaginary coffee and talk!') }}
                 </h1>
                 <div><strong>Email Address:</strong><span class="ml-2">{{ __('innovations@ssagroup.com') }}</span></div>
-                <div><strong>Headquarters:</strong> <span class="ml-2">{{ __('11 Eunos Road 8 #06-01 (Lobby A), Lifelong Learning Institute, Singapore') }}</span></div>
-                <div><strong>Philippines Branch:</strong><span class="ml-2">{{ __('Pearl Drive, Ortigas, Philippines') }}</span></div>
+                <div><strong>HQ:</strong> <span class="ml-2">{{ __('11 Eunos Road 8, Lifelong Learning Institute, Singapore') }}</span></div>
+                <div><strong>Philippines Branch:</strong><span class="ml-2">{{ __('Ortigas, Philippines') }}</span></div>
               </v-card>
             </v-flex>
           </v-layout>
