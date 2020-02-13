@@ -129,8 +129,8 @@ export default {
             aosDuration: '400',
             thumbnail: lms,
             title: 'Rippl3s',
-            description: 'Learning Management System',
-            link: 'management-systems/lms'
+            description: 'Organisation Learning System',
+            link: 'management-systems/ols'
           },
           // {
           //   aosDuration: '500',
@@ -143,8 +143,8 @@ export default {
             aosDuration: '600',
             thumbnail: hrms,
             title: 'Ponos',
-            description: 'Human Resource Management System',
-            link: 'management-systems/hrms'
+            description: 'Performance Management System',
+            link: 'management-systems/pms'
           },
         ]
       }
