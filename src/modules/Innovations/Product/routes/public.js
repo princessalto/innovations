@@ -66,11 +66,11 @@ export default [
         },
       },
       {
-        path: 'management-systems/lms',
-        name: 'systems.lms',
-        component: () => import('../systems/LMS.vue'),
+        path: 'management-systems/ols',
+        name: 'systems.ols',
+        component: () => import('../systems/OLS.vue'),
         meta: {
-          title: 'LMS',
+          title: 'OLS',
           sort: 5,
           external: true,
           excludeFromRoot: true,
@@ -92,11 +92,11 @@ export default [
       //   },
       // },
       {
-        path: 'management-systems/hrms',
-        name: 'systems.hrms',
-        component: () => import('../systems/HRMS.vue'),
+        path: 'management-systems/pms',
+        name: 'systems.pms',
+        component: () => import('../systems/PMS.vue'),
         meta: {
-          title: 'HRMS',
+          title: 'PMS',
           sort: 5,
           external: true,
           excludeFromRoot: true,

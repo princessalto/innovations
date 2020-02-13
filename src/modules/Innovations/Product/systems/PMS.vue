@@ -25,7 +25,7 @@ import iconFour from './assets/icons/hrms/4.svg'
 
 export default {
   store,
-  name: 'HRMS',
+  name: 'PMS',
 
   components: {
     ProductBanner,
