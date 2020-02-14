@@ -26,7 +26,7 @@ import video from './assets/videos/lms.mp4'
 
 export default {
   store,
-  name: 'LMS',
+  name: 'OLS',
 
   components: {
     ProductBanner,

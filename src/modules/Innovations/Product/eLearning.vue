@@ -52,7 +52,7 @@ export default {
 
         iconTwo: iconTwo,
         titleTwo: 'Wide scope of curriculum',
-        descriptionTwo: 'Choose from a variety of relevant topics formed by SSA Academy’s league of trainers and subject matter experts.',
+        descriptionTwo: 'Choose from a variety of relevant topics formed by SSA Academy’s league of trainers, instructional designers, and subject matter experts.',
 
         iconThree: iconThree,
         titleThree: 'Adaptive degree of complexity',
