@@ -60,7 +60,7 @@
               <div class="py-5">
                 <v-layout row wrap>
                   <template v-for="(item, i) in content.items">
-                    <v-flex :offset-md1="true" md4 xs12 :key="i">
+                    <v-flex md4 xs12 :key="i">
                       <v-card
                         hover
                         height="100%"
@@ -104,6 +104,7 @@ import msBanner from './assets/images/msBanner.svg'
 import lms from './assets/images/lmsBanner.svg'
 // import cms from './assets/images/cmsBanner.svg'
 import hrms from './assets/images/hrmsBanner.svg'
+import tms from './assets/images/tmsBanner.svg'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -145,6 +146,13 @@ export default {
             title: 'Ponos',
             description: 'Performance Management System',
             link: 'management-systems/pms'
+          },
+          {
+            aosDuration: '600',
+            thumbnail: tms,
+            title: 'Pebbl3s',
+            description: 'Training Management System',
+            link: 'management-systems/tms'
           },
         ]
       }
