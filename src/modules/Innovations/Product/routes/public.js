@@ -104,6 +104,19 @@ export default [
           icon: 'mdi-book-multiple-variant',
         },
       },
+      {
+        path: 'management-systems/tms',
+        name: 'systems.tms',
+        component: () => import('../systems/TMS.vue'),
+        meta: {
+          title: 'TMS',
+          sort: 5,
+          external: true,
+          excludeFromRoot: true,
+          authenticatable: false,
+          icon: 'mdi-book-multiple-variant',
+        },
+      },
     ]
   },
 ]
