@@ -70,15 +70,17 @@
                         <div class="mb-3">
                           <img
                             @contextmenu.prevent="preventRightClick"
-                            width="300"
+                            width="100%"
                             :src="item.thumbnail"
                             alt=""
                           >
                         </div>
-                        <p class="mb-3">
-                          <strong v-html="trans(item.title)"></strong>
-                        </p>
-                        <p>{{ trans(item.description) }}</p>
+                        <div class="px-3">
+                          <p class="mb-3">
+                            <strong v-html="trans(item.title)"></strong>
+                          </p>
+                          <p>{{ trans(item.description) }}</p>
+                        </div>
                       </v-card>
                     </v-flex>
                   </template>

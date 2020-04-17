@@ -45,7 +45,7 @@ export default {
 
       content: {
         hasVideo: false,
-        heading: 'Training, simplified.',
+        heading: 'Training, simplified',
         iconOne: iconOne,
         titleOne: 'Optimised Scheduling',
         descriptionOne: 'Allow trainers to build a cohesive training schedules with specialised management tools',

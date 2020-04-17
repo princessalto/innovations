@@ -16,6 +16,7 @@
               <h3 class="mb-3" v-html="item.subtitle"></h3>
               <p class="font__weight--bold mb-3" v-html="item.description"></p>
               <v-btn
+                class="ml-0"
                 large
                 color="secondary"
                 v-show="item.bannerBtn"
