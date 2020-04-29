@@ -1,15 +1,78 @@
 <template>
   <v-container grid-list-lg>
-    <v-layout row wrap justify-center align-center>
+    <v-card height="30" flat class="transparent"></v-card>
+    <v-layout row wrap justify-center align-center height="100%">
       <v-flex xl8 lg10 md12 xs12>
         <div class="my-5 text-xs-center">
           <h1 class="mb-3 primary--text">
             {{ trans('Meet Our Executives') }}
           </h1>
         </div>
-
-        <v-layout row wrap justify-center align-center>
+        <v-layout justify-center>
           <v-flex sm4 xs12>
+            <v-card height="100%" hover>
+              <v-menu
+                v-model="menuContent1"
+                :close-on-content-click="false"
+                max-width="600"
+                offset-x
+                right
+                transition="slide-x-transition"
+                height="100%"
+                >
+                <v-card flat class="transparent" height="100%" slot="activator">
+                  <img width="100%" :src="executives.suhaimi"/>
+                  <v-card-text class="text-xs-center">
+                    <h4 class="primary--text">{{ __('Suhaimi Salleh') }}</h4>
+                    <p>{{ __('President & Chief Executive Officer') }}</p>
+                  </v-card-text>
+                </v-card>
+
+                <v-card>
+                  <v-card-text class="pa-4">
+                    <h3 class="mb-1">{{ __('Suhaimi Salleh') }}</h3>
+                    <p><strong>{{ __('President & Chief Executive Officer') }}</strong></p>
+
+                    <br>
+                    <p>{{ __('Suhaimi has more than 40 years of post-graduate experience in management, consulting and corporate training. His expertise includes audit, finance, productivity and human capital management in a broad range of industries in Singapore, Malaysia, Indonesia, Philippines and Brunei.') }}</p>
+                  </v-card-text>
+                </v-card>
+              </v-menu>
+            </v-card>
+          </v-flex>
+          <v-flex sm4 xs12 offset-sm1>
+            <v-card height="100%" hover>
+              <v-menu
+              v-model="menuContent2"
+              :close-on-content-click="false"
+              max-width="600"
+              offset-x
+              left
+              transition="slide-x-transition"
+              >
+              <v-card flat class="transparent" height="100%" slot="activator">
+                <img width="100%" :src="executives.affandi"/>
+                <v-card-text class="text-xs-center">
+                  <h4 class="primary--text">{{ __('Affandi Salleh') }}</h4>
+                  <p>{{ __('Executive Vice President & Chief Operating Officer') }}</p>
+                </v-card-text>
+              </v-card>
+
+              <v-card>
+                <v-card-text class="pa-4">
+                  <h3 class="mb-1">{{ __('Affandi Salleh') }}</h3>
+                  <p><strong>{{ __('Executive Vice President & Chief Operating Officer') }}</strong></p>
+
+                  <br>
+                  <p>{{ __('With over a quarter century of diverse experience in management consultancy, Affandi’s consultancy work has spanned to corporate and strategic planning, industrial management, organisational development, and acquisition.') }}</p>
+                </v-card-text>
+              </v-card>
+            </v-menu>
+            </v-card>
+          </v-flex>
+        </v-layout>
+        <!-- <v-layout row wrap justify-center height="100%">
+          <v-flex sm4 xs12 height="100%">
             <v-menu
               v-model="menuContent1"
               :close-on-content-click="false"
@@ -17,6 +80,7 @@
               offset-x
               right
               transition="slide-x-transition"
+              height="100%"
               >
               <v-card hover height="100%" slot="activator">
                 <img width="100%" :src="executives.suhaimi"/>
@@ -72,7 +136,7 @@
               </v-card>
             </v-menu>
           </v-flex>
-        </v-layout>
+        </v-layout> -->
       </v-flex>
     </v-layout>
   </v-container>

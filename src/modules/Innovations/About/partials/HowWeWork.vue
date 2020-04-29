@@ -1,6 +1,6 @@
 <template>
   <v-card flat class="">
-    <v-card-text class="py-5 text-xs-center">
+    <v-card-text class="pb-5 text-xs-center">
       <div class="my-5 text-xs-center">
         <h1 class="primary--text mb-3">
           {{ trans('How We Work') }}
