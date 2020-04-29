@@ -15,7 +15,7 @@
           class="mx-1"
           >
           {{ __(menu.meta.title) }}
-          <v-icon right>keyboard_arrow_down</v-icon>
+          <v-icon right>mdi-chevron-down</v-icon>
         </v-btn>
         <v-list light>
           <v-list-tile
