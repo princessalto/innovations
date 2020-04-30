@@ -3,7 +3,7 @@
     <v-layout row wrap justify-center align-center>
       <v-flex lg10 md12 xs12>
         <v-card flat class="my-3">
-          <v-card-text class="py-5 text-xs-center">
+          <v-card-text class="pt-5 text-xs-center">
             <div class="my-5 text-xs-center">
               <h1 class="primary--text mb-3">
                 {{ trans('Our Clients') }}
