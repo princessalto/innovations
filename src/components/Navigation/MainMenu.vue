@@ -15,7 +15,7 @@
           class="mx-1"
           >
           {{ __(menu.meta.title) }}
-          <v-icon right>mdi-chevron-down</v-icon>
+          <i aria-hidden="true" class="material-icons right">expand_more</i>
         </v-btn>
         <v-list light>
           <v-list-tile
