@@ -117,6 +117,19 @@ export default [
           icon: 'mdi-book-multiple-variant',
         },
       },
+      {
+        path: 'inline-ar',
+        name: 'products.inline-ar',
+        component: () => import('../WebAR.vue'),
+        meta: {
+          title: 'WebAR',
+          sort: 5,
+          external: true,
+          excludeFromRoot: true,
+          authenticatable: false,
+          icon: 'mdi-book-multiple-variant',
+        },
+      },
     ]
   },
 ]
