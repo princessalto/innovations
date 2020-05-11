@@ -15,14 +15,14 @@ var loadModules = function (modules, urlPrefix, doneCallback) {
     // load a script
     function loadScriptAsync(url, doneCallback) {
         var tag = document.createElement('script');
-        tag.onload = () => {
+        tag.onload = function () {
             doneCallback();
         };
-        tag.onerror = () => {
+        tag.onerror = function () {
             throw new Error('failed to load ' + url);
         };
         tag.async = true;
-        tag.src = urlPrefix + url;
+        tag.src = url;
         document.head.appendChild(tag);
     }
 
@@ -31,18 +31,10 @@ var loadModules = function (modules, urlPrefix, doneCallback) {
         loadScriptAsync(jsUrl, function () {
             var lib = window[moduleName];
             window[moduleName + 'Lib'] = lib;
-            lib({ locateFile: () => urlPrefix + binaryUrl }).then( function (instance) {
+            lib({ locateFile: function () { return binaryUrl; } } ).then( function (instance) {
                 window[moduleName] = instance;
                 doneCallback();
             });
-        });
-    }
-
-    // load and initialize an asm.js module
-    function loadAsmModuleAsync(moduleName, jsUrl, doneCallback) {
-        return loadScriptAsync(jsUrl, function () {
-            window[moduleName] = window[moduleName]();
-            doneCallback();
         });
     }
 
@@ -60,13 +52,17 @@ var loadModules = function (modules, urlPrefix, doneCallback) {
 
         var wasm = wasmSupported();
         modules.forEach(function (m) {
-            if (wasm) {
-                loadWasmModuleAsync(m.moduleName, m.glueUrl, m.wasmUrl, asyncCallback);
-            } else {
-                if (!m.fallbackUrl) {
-                    throw new Error('wasm not supported and no fallback supplied for module ' + m.moduleName);
+            if (!m.hasOwnProperty('preload') || m.preload) {
+                if (wasm) {
+                    loadWasmModuleAsync(m.moduleName, urlPrefix + m.glueUrl, urlPrefix + m.wasmUrl, asyncCallback);
+                } else {
+                    if (!m.fallbackUrl) {
+                        throw new Error('wasm not supported and no fallback supplied for module ' + m.moduleName);
+                    }
+                    loadWasmModuleAsync(m.moduleName, urlPrefix + m.fallbackUrl, "", asyncCallback);
                 }
-                loadAsmModuleAsync(m.moduleName, m.fallbackUrl, asyncCallback);
+            } else {
+                asyncCallback();
             }
         });
     }
