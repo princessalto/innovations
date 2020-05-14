@@ -75,9 +75,9 @@
 
 <script>
 import store from '@/store'
-import ManagementSystem from '@/modules/Innovations/Home/assets/images/ManagementSystemBannerWithBG.png'
-import eLearning from '@/modules/Innovations/Home/assets/images/eLearningBannerWithBG.png'
-import MobileApp from '@/modules/Innovations/Home/assets/images/MobileAppBannerWithBG.png'
+import ManagementSystem from '@/modules/Innovations/Home/assets/images/ManagementSystem.png'
+import eLearning from '@/modules/Innovations/Home/assets/images/ELearning.png'
+import MobileApp from '@/modules/Innovations/Home/assets/images/MobileApp.png'
 
 export default {
   store,
