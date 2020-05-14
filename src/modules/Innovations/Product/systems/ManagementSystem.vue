@@ -100,7 +100,7 @@
 
 <script>
 import store from '@/store'
-import msBanner from './assets/images/msBanner.svg'
+import msBanner from '@/modules/Innovations/Product/assets/images/ManagementSystem.png'
 import lms from './assets/images/lmsBanner.svg'
 // import cms from './assets/images/cmsBanner.svg'
 import hrms from './assets/images/hrmsBanner.svg'
