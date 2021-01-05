@@ -39,7 +39,7 @@
     "@vue/cli-plugin-pwa": "^3.0.1",
     "@vue/cli-service": "^3.4.0",
     "@vue/eslint-config-standard": "^3.0.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "latest-node": "0.0.3",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
